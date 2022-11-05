@@ -11,12 +11,13 @@
   <!--nav-->
   <div class="nav">
       <a href="#home">HOME</a>
-      <a href="#gallary">ROOMS</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#room">ROOMS</a>
       <a href="#about">ABOUT US</a>
       <a href="#contact">CONTACT US</a>
   </div>
   <!--home-->
-  <div class="home-image">
+  <div class="home-image" id="home">
     <div class="home-text">
       <h1 style="font-size:50px">WELCOME TO LUXURY</h1>
       <h3>WE ARE YOUR FAMILY</h3>
@@ -57,19 +58,25 @@
   </div>
   <!--gallary-->
   <br>
-  <div class="gallary">
-    <h2 id="gallary">GALLARY</h2>
+  <div class="gallery">
+    <h2 id="gallery">GALLERY</h2>
     <br>
     <h3>BEST IN CLASS ROOMS FOR THE BEST IN CLASS CUSTOMERS</h3>
     <div class="row">
         <div class="column">
-          <img src="Room1.jpg" alt="Snow" style="width:100%">
+          <img src="Room1.jpg" alt="BED" width="400px" height="300px">
         </div>
         <div class="column">
-          <img src="Room2.jpg" alt="Forest" style="width:100%">
+          <img src="Room2.jpg" alt="BED" width="400px" height="300px" usemap="#curtmap">
+          <map name="curtmap">
+            <area shape="rect" coords="147,104,254,162" alt="bed" href="https://unsplash.com/s/photos/curtain">
+          </map>
         </div>
         <div class="column">
-          <img src="Room3.jpg" alt="Mountains" style="width:100%">
+          <img src="Room3.jpg" alt="BED" width="400px" height="300px" usemap="#bedmap">
+          <map name="bedmap">
+            <area shape="rect" coords="132,147,345,245" alt="bed" href="https://unsplash.com/s/photos/bed">
+          </map>
         </div>
     </div>
     <a href="https://unsplash.com/s/photos/hotel-room" id="browse">BROWSE MORE....</a>
@@ -77,7 +84,7 @@
   
   <!--rooms-->
   <br>
-  <div class="room">
+  <div class="room" id="room">
     <table>
       <tr>
         <th rowspan="2">ROOMS</th>
