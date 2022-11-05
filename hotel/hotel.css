@@ -102,24 +102,24 @@
   margin-left: 80px;
   text-align: center;
 }
-.gallary h2, .gallary h3
+.gallery h2, .gallery h3
 {
   text-align: center;
 }
-.gallary .column 
+.gallery .column 
 {
     float: left;
     width: 33.33%;
     padding: 5px;
 }
 
-.gallary .row::after 
+.gallery .row::after 
 {
     content: "";
     clear: both;
     display: table;
 }
-.gallary #browse
+.gallery #browse
 {
   margin-left: 570px;
   text-decoration: none;
