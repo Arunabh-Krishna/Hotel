@@ -20,10 +20,10 @@
   <div class="home-image" id="home">
     <div class="home-text">
       <h1 style="font-size:50px">WELCOME TO LUXURY</h1>
-      <h3>WE ARE YOUR FAMILY</h3>
+      <p>welcome to the luxurious living you have always dreamed about</p>
     </div>
-  </div>
-  <br>
+    <br>
+  </div> 
   <!--eminities-->
   <div class="eminities">
     <h2>EMINITIES PROVIDED</h2>
@@ -79,7 +79,7 @@
           </map>
         </div>
     </div>
-    <a href="https://unsplash.com/s/photos/hotel-room" id="browse">BROWSE MORE....</a>
+    <a href="video and audio.html" id="browse">BROWSE MORE....</a>
   </div>
   
   <!--rooms-->
@@ -132,7 +132,9 @@
       <br>
       <input type="email" placeholder="Email">
       <br>
-      <input type="number" placeholder="Phone">
+      <input type="tel" placeholder="Phone">
+      <br>
+      <input type="date" placeholder="date">
       <br>
       <input type="text" placeholder="Subject">
       <br>
@@ -142,4 +144,29 @@
       <input type="reset" value="reset" id="btn">
     </form>
   </div>
+  <br>
+  <div class="geolocation">
+    <h2>GET YOUR LOCATION</h2>
+    <br>
+    <input type="button" onclick="getLocation()" value="Location" id="btn">
+    <br>
+    <p id="demo"></p>
+    <script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+  </div>
 </body>
+</html>
