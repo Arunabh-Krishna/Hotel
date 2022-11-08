@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+</head>
+<body>
+    <h1>PICTURES</h1>
+
+    <h1>VIDEOS</h1>
+        <video width="350" height="250" controls>
+            <source src="Hotel Food And Interior.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <video width="350" height="250" controls>
+            <source src="food.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <video width="350" height="250" controls>
+            <source src="scenary.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    <h1>OUR MUSIC</h1>
+          <h2>COOL JAZZ</h2>
+          <audio controls>
+              <source src="cool_jazz.mp3" type="audio/mpeg">
+              AUDIO UNPLAYABLE
+          </audio>
+          <h3>LOBBY MUSIC</h3>
+          <audio controls>
+              <source src="Lobby_Music.mp3" type="audio/mpeg">
+              AUDIO UNPLAYABLE
+          </audio>
+        <br>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+           
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font="30px Arial" ;
+            ctx.strokeText("THANK YOU",10,50);
+        </script>
+            
+</body>
+</html>
