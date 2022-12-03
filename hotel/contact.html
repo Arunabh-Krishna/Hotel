@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<script >
+    function ValidateForm() {
+      var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+        var name = document.getElementById('name').value;
+        if(!regName.test(name)){
+            alert('Please enter your full name (first & last name).');
+            document.getElementById('name').focus();
+            return false;
+        }
+    
+        var phoneno = /^\d{10}$/;
+        var phone = document.getElementById('phone').value;
+        if (!phoneno.test(phone)) {
+        alert('Please provide a valid phone number');
+        phone.focus;
+        return false;
+     }
+    
+      var email = document.getElementById('email');
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+        if (!filter.test(email.value)) {
+        alert('Please provide a valid email address');
+        email.focus;
+        return false;
+     }
+     var newPassword = document.getElementById('password');
+        var minNumberofChars = 8;
+        var maxNumberofChars = 16;
+        var isNonWhiteSpace = /^\S*$/;
+        var isContainsUppercase = /^(?=.*[A-Z]).*$/;
+        var isContainsLowercase = /^(?=.*[a-z]).*$/;
+        var isContainsNumber = /^(?=.*[0-9]).*$/;
+        var isContainsSymbol = /^(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).*$/;
+        var isValidLength = /^.{8,16}$/;
+        
+        if (!isNonWhiteSpace.test(newPassword.value)) {
+        alert("Password must not contain Whitespaces.");
+        newPassword.focus;
+      }
+      if (!isContainsUppercase.test(newPassword.value)) {
+        alert("Password must have at least one Uppercase Character.");
+        newPassword.focus;
+      }
+      if (!isContainsLowercase.test(newPassword.value)) {
+        alert("Password must have at least one Lowercase Character.");
+        newPassword.focus;
+      }
+      if (!isContainsNumber.test(newPassword.value)) {
+        alert("Password must contain at least one Digit.");
+        newPassword.focus;
+      }
+      if (!isContainsSymbol.test(newPassword.value)) {
+        alert("Password must contain at least one Special Symbol.");
+        newPassword.focus;
+      }
+      if (!isValidLength.test(newPassword.value)) {
+        alert("Password must be 8-16 Characters Long.");
+        newPassword.focus;
+        return false;
+      }
+    }
+</script>
+<body>
+    <div class="contact-image" id="home">
+    <!--nav-->
+    <nav>
+        <ul>
+          <li><a href="hotel.html">HOME</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="#room">ROOMS</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+        </ul>
+      </nav>  
+   
+    <br>
+    <!--CONTACT FORM-->  
+    <div class="contact" onsubmit="return ValidateForm()">
+        <h2 id="contact">CONTACT FORM</h2>
+        <form >
+          <br>
+          <input type="text" id="name" name="name" placeholder="Name">
+          <br>
+          <input type="text" id="email" name="email" placeholder="Email">
+          <br>
+          <input type="tel" id="phone" name="phone" placeholder="Phone">
+          <br>
+          <input type="date" placeholder="date">
+          <br>
+          <input list="Region" name="Region" placeholder="Region">
+              <datalist id="Region">
+                <option value="Africa">
+                <option value="Asia">
+                <option value="Europe">
+                <option value="North America">
+                <option value="Oceana">
+                <option value="South America">
+              </datalist>
+          <br>
+          <input type="password" id="password" name="password" placeholder="Password">
+          <br>     
+          <textarea cols="30" rows="10" placeholder="Comments"></textarea>
+          <br>
+          <input type="submit" value="Submit" id="btn"/>
+          <input type="reset" value="Reset" id="btn"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>

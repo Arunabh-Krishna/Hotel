@@ -1,0 +1,94 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+  nav
+{
+    flex: 1;
+    padding-left: 800px;
+    padding-top: 15px;
+    background-attachment: scroll;
+    background-color: transparent;
+}
+  nav ul li
+{
+    display:inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+  nav ul li a{
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+}
+.contact-image 
+{
+    background-image: url("pexels-paul-ijsendoorn-444964.jpg");
+    height: 625px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contact
+{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border-radius: 50px;
+}
+.contact h2
+{
+    text-align: center;
+    color: aqua;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+.contact form input
+{
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: black;
+  border: solid 2px aqua;
+  color-scheme: dark;
+  color:aqua;
+  padding-left: 10px;
+}
+.contact form textarea
+{
+  width: 400px;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  color:aqua;
+  border: solid 2px aqua;
+  background-color: black;
+}
+.contact form input::placeholder , textarea::placeholder
+{
+  padding: 2px 4px 2px 8px;
+  color: aqua;
+}
+.contact form #btn
+{
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width:50px;
+  height: 30px;
+  border-radius: 10px;
+}
