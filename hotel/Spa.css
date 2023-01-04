@@ -1,0 +1,114 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .room
+{
+  
+  text-align: center;
+  font-size: 20px;
+}
+.room h2
+{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.room table
+{
+  margin-left: 440px;
+  width: 400px;
+  border: solid;
+  border-color: black;
+  column-rule: black;
+}
+.room th
+{
+  border: solid;
+  border-color: black;
+  column-rule: black;
+}
+.room td
+{
+  border: solid;
+  border-color: black;
+  column-rule: black;
+}
+.about h2
+{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.about .box
+{
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: aliceblue;
+  border-radius: 80px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.about .box p
+{
+  width:80%;
+  margin-left: 80px;
+  text-align: center;
+}
+.contact
+{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border-radius: 50px;
+}
+.contact h2
+{
+    text-align: center;
+    color: aqua;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+.contact form input
+{
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: black;
+  border: solid 2px aqua;
+  color-scheme: dark;
+  color:aqua;
+  padding-left: 10px;
+}
+.contact form textarea
+{
+  width: 400px;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  color:aqua;
+  border: solid 2px aqua;
+  background-color: black;
+}
+.contact form input::placeholder , textarea::placeholder
+{
+  padding: 2px 4px 2px 8px;
+  color: aqua;
+}
+.contact form #btn
+{
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width:50px;
+  height: 30px;
+  border-radius: 10px;
+}
