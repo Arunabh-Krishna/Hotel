@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lab 7: Angular</title>
+    <link rel="stylesheet" href="lab7.css">
+</head>
+<body ng-app="lab7App">
+    <h1>Hotel Booking</h1>
+    <section>
+    <div ng-controller="MyController">
+        No of rows: <input type="number" ng-model="limit" min="1" max={{rowLimit}}>
+        Search:<input type="search" ng-model="search" placeholder="Search Something"><br><br>
+        <table>
+            <tr>
+                <th ng-click="setName()">Name &#8597;</th>
+                <th ng-click="setDob()">DOB &#8597;</th>
+                <th ng-click="setAge()">Age &#8597;</th>
+                <th ng-click="setGender()">Gender &#8597;</th>
+                <th ng-click="setTrDate()">Booking Date &#8597;</th>
+            </tr>
+            <tr ng-repeat="data in datas | limitTo: limit | orderBy:order |filter:search">
+                <td>{{data.name}}</td>
+                <td>{{data.date | date:"dd/MM/yyyy"}}</td>
+                <td>{{data.date | findAge}}</td>
+                <td>{{data.gender | uppercase }}</td>
+                <td>{{data.bkDate | date:"dd/MM/yyyy"}}</td>  
+            </tr>
+        </table>
+    </div>
+</section>
+
+</body>
+</html>
