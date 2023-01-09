@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+.contact
+{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border-radius: 50px;
+}
+.contact h3
+{
+    text-align: center;
+    color: aqua;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+input[type=text], input[type=phone], input[type=email]
+{
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: black;
+  border: solid 2px aqua;
+  color-scheme: dark;
+  color:aqua;
+  padding-left: 10px;
+}
+.contact form input::placeholder 
+{
+  padding: 2px 4px 2px 8px;
+  color: aqua;
+}
+.contact form #btn
+{
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width:60px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+input[type= radio]
+{
+    width: 2rem;
+}
+#home
+{
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="contact">
+    <form action="/searchstudent"  >
+    <h3>SEARCH CUSTOMER</h3>
+    <input type="phone" placeholder="phone No" name="phone" id="phone" required>
+    <br><br>
+    <button type="submit" id="btn" class="registerbtn">SEACRH</button>
+    <br><br>
+    <a id="home" href="./" style="color:black">HOME</a>
+    <br>
+     {{#if mesg1}}
+     <h3>Data Found!</h3>
+     {{/if}}
+
+     {{#if mesg2}}
+     <h3>Data Not Found!</h3>
+     {{/if}}
+    </form>
+  </div>
+</body>
+</html>
