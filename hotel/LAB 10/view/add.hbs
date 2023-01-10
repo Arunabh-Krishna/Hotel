@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+* {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            background-color: black;
+          }
 .contact
 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: transparent;
+  background-color: black;
   border-radius: 50px;
 }
 .contact h3
@@ -51,8 +57,13 @@ input[type=text], input[type=phone], input[type=email]
   width:50px;
   height: 30px;
   border-radius: 10px;
+  border-color: aqua;
+  color: white;
 }
-
+.gender_g
+{
+  color: white;
+}
 input[type= radio]
 {
     width: 2rem;
@@ -60,41 +71,43 @@ input[type= radio]
 #home
 {
     text-decoration: none;
+color: white;
 }
     </style>
 </head>
 <body>
     <div class="contact">
-       <form action="/addstudent"  >
+       <form action="/addstudent">
+       <br><br><br>
    <h3>ADD CUSTOMER</h3>
-   
+   <br><br>
     <div class="form">
     
     <input type="text" placeholder="Customer Name" name="name" id="text" required>
-    <br>
+    <br><br><br>
     
     <input type="phone" placeholder="Customer Phone Number" name="phone" id="text" required>
-    <br>
+    <br><br><br>
     
     <input type="email" placeholder="Customer Email Id" name="email" id="text" required>
-    <br>
+    <br><br>
     <br>
   <div class="gender_g">
-     <strong>Gender </strong>
+     <strong>Gender:</strong>
      <input type="radio" name="gender" id="radio" value="Male"> Male
      <input type="radio" name="gender" id="radio"  value="Female">  Female
   </div>
     <button type="submit" id="btn" class="registerbtn">ADD</button>
     </div>
     <br>
-    <a id="home" href="./" style="color:black">HOME</a> <br>
+    <a id="home" href="./">HOME</a> <br>
      
      {{#if mesg}}
-     <h3>Data Inserted</h3>
+     <h6>Data Inserted</h6>
      {{/if}}
 
       {{#if checkmesg}}
-     <h3>Emailid or Phoneno already present!</h3>
+     <h6>Emailid or Phoneno already present!</h6>
      {{/if}}
 </form>
 </div>
