@@ -50,7 +50,7 @@ app.get("/view", (req, res) => {
 });
 
 
-app.get("/addstudent", (req, res) => {
+app.get("/addcustomer", (req, res) => {
     // fetching data from form
     const { name, phone, email, gender } = req.query
 
@@ -78,7 +78,7 @@ app.get("/addstudent", (req, res) => {
 });
 
 
-app.get("/searchstudent", (req, res) => {
+app.get("/searchcustomer", (req, res) => {
     // fetch data from the form
 
 
@@ -101,7 +101,7 @@ app.get("/searchstudent", (req, res) => {
 })
 
 
-app.get("/removestudent", (req, res) => {
+app.get("/removecustomer", (req, res) => {
 
     // fetch data from the form
 
