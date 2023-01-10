@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <style>
+      * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            background-color: black;
+          }
 .contact
 {
   text-align: center;
@@ -39,6 +46,7 @@ input[type=text], input[type=phone], input[type=email]
 {
   padding: 2px 4px 2px 8px;
   color: aqua;
+  align-items: center;
 }
 .contact form #btn
 {
@@ -46,9 +54,11 @@ input[type=text], input[type=phone], input[type=email]
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  width:60px;
+  width:70px;
   height: 30px;
   border-radius: 10px;
+  border-color: aqua;
+  color: white;
 }
 
 input[type= radio]
@@ -58,19 +68,22 @@ input[type= radio]
 #home
 {
     text-decoration: none;
+    color: white;
 }
     </style>
 </head>
 <body>
     <div class="contact">
     <form action="/searchstudent"  >
+    <br><br><br>
     <h3>SEARCH CUSTOMER</h3>
-    <input type="phone" placeholder="phone No" name="phone" id="phone" required>
-    <br><br>
+    <br><br><br>
+    <input type="phone" placeholder="Phone No" name="phone" id="phone" required>
+    <br><br><br>
     <button type="submit" id="btn" class="registerbtn">SEACRH</button>
+    <br><br><br>
+    <a id="home" href="./">HOME</a>
     <br><br>
-    <a id="home" href="./" style="color:black">HOME</a>
-    <br>
      {{#if mesg1}}
      <h3>Data Found!</h3>
      {{/if}}
