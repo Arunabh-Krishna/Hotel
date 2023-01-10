@@ -6,71 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <style>
-.contact
-{
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: transparent;
-  border-radius: 50px;
-}
-.contact h3
-{
-    text-align: center;
-    color: aqua;
-    font-size: 35px;
-    font-weight: 600;
-    font-family: 'Dancing Script', cursive;
-}
-input[type=text], input[type=phone], input[type=email]
-{
-  width: 400px;
-  height: 40px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border-radius: 20px;
-  background-color: black;
-  border: solid 2px aqua;
-  color-scheme: dark;
-  color:aqua;
-  padding-left: 10px;
-}
-.contact form input::placeholder 
-{
-  padding: 2px 4px 2px 8px;
-  color: aqua;
-}
-.contact form #btn
-{
-  padding-left: 0px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  width:60px;
-  height: 30px;
-  border-radius: 10px;
-}
+      * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            background-color: black;
+          }
+        .contact
+          {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: transparent;
+            border-radius: 50px;
+          }
+        .contact h3
+          {
+              text-align: center;
+              color: aqua;
+              font-size: 35px;
+              font-weight: 600;
+              font-family: 'Dancing Script', cursive;
+          }
+        input[type=text], input[type=phone], input[type=email]
+          {
+            width: 400px;
+            height: 40px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            border-radius: 20px;
+            background-color: black;
+            border: solid 2px aqua;
+            color-scheme: dark;
+            color:aqua;
+            padding-left: 10px;
+          }
+        .contact form input::placeholder 
+          {
+            padding: 2px 4px 2px 8px;
+            color: aqua;
+          }
+        .contact form #btn
+          {
+          padding-left: 0px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            width:70px;
+            height: 30px;
+            border-radius: 10px;
+            border-color: aqua;
+            color: white;
+          }
 
-input[type= radio]
-{
-    width: 2rem;
-}
-#home
-{
-    text-decoration: none;
-}
+          input[type= radio]
+          {
+              width: 2rem;
+          }
+          #home
+          {
+              text-decoration: none;
+              color: white;
+          }
     </style>
 </head>
 <body>
     <div class="contact">
       <form action="/removestudent">
+      <br><br><br>
    <h3>SEARCH CUSTOMER</h3>
-   <br>
+   <br><br><br>
     <input type="phone" placeholder="Phone No" name="phone" id="phone" required>
-    <br><br>
+    <br><br><br>
     <button type="submit" id="btn" class="registerbtn">DELETE</button>
-    <br><br>
-    <a id="home" href="./" style="color:black">HOME</a>
+    <br><br><br>
+    <a id="home" href="./">HOME</a>
 
     <br>
     {{#if mesg1}}
